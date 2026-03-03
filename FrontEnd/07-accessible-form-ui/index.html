@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<title>Accessible Form</title>
+	</head>
+	<body>
+		<div class="flex flex-col items-center">
+			<div
+				class="w-11/12 flex flex-col sm:flex-row gap-5 border rounded-2xl p-5 m-10"
+			>
+				<div class="flex-1 flex flex-col gap-3 items-center">
+					<div
+						class="flex flex-col items-center justify-center size-30 border bg-gray-100 rounded-full"
+					>
+						<div class="text-2xl font-bold">37%</div>
+					</div>
+					<div class="text-xl">Kelengkapan Profil</div>
+					<div
+						class="flex-1 w-full bg-gray-100 p-5 rounded-2xl border"
+					>
+						<div class="line-through text-gray-800">Buat Akun</div>
+						<div>Setup Profile</div>
+						<div>Update Roadmap Progress</div>
+						<div>Selesaikan Project Pertamamu!</div>
+					</div>
+				</div>
+				<div class="flex-1 flex flex-col gap-2">
+					<div>
+						<div>Nama Lengkap</div>
+						<input
+							type="text"
+							placeholder="Nama Lengkap"
+							class="w-full bg-gray-100 p-2 rounded border"
+						/>
+					</div>
+					<div>
+						<div>Email</div>
+						<input
+							type="email"
+							placeholder="username@gmail.com"
+							class="w-full bg-gray-100 p-2 rounded border"
+						/>
+					</div>
+					<div>
+						<div>Password</div>
+						<input
+							type="password"
+							placeholder="*********"
+							class="w-full bg-gray-100 p-2 rounded border"
+						/>
+					</div>
+					<div>
+						<div>Konfirmasi Password</div>
+						<input
+							type="password"
+							placeholder="*********"
+							class="w-full bg-gray-100 p-2 rounded border"
+						/>
+					</div>
+					<div>
+						<button class="bg-black text-white w-full p-2 rounded">
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
