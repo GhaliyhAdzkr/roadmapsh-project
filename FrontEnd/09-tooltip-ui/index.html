@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<title>Tooltip-ui</title>
+	</head>
+	<body>
+		<div class="flex flex-col items-center justify-center h-screen gap-2">
+			<!-- 1. Tooltip Top -->
+			<div class="bg-blue-100 p-3">
+				<div class="relative group">
+					<button
+						class="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-600"
+					>
+						Home
+					</button>
+					<div
+						class="absolute bottom-full text-sm text-white left-1/2 transform -translate-x-1/2 w-max bg-gray-700 mb-3 px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100"
+					>
+						A homepage which include a little bit of everything
+						<div
+							class="absolute top-full left-1/2 -translate-x-1/2 border-x-8 border-x-transparent border-t-8 border-t-gray-700"
+						></div>
+					</div>
+				</div>
+			</div>
+			<!-- 2. Tooltip Left -->
+			<div class="bg-blue-200 p-3">
+				<div class="relative group">
+					<button
+						class="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-600"
+					>
+						Project
+					</button>
+					<div
+						class="absolute right-full top-1/2 transform -translate-y-1/2 mr-3 w-max px-2 py-1 text-sm text-white bg-gray-700 rounded shadow-lg opacity-0 group-hover:opacity-100"
+					>
+						A Gallery of everything i have done
+						<div
+							class="absolute left-full top-1/2 transform -translate-y-1/2 border-y-8 border-y-transparent border-l-8 border-l-gray-700"
+						></div>
+					</div>
+				</div>
+			</div>
+			<!-- 3. Tooltip Left -->
+			<div class="bg-blue-300 p-3">
+				<div class="relative group">
+					<button
+						class="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-600"
+					>
+						Articles
+					</button>
+					<div
+						class="absolute left-full top-1/2 transform -translate-y-1/2 ml-3 w-max px-2 py-1 text-sm text-white bg-gray-700 rounded shadow-lg opacity-0 group-hover:opacity-100"
+					>
+						Some news maybe, idk & idc
+						<div
+							class="absolute right-full top-1/2 transform -translate-y-1/2 border-y-8 border-y-transparent border-r-8 border-r-gray-700"
+						></div>
+					</div>
+				</div>
+			</div>
+			<!-- 4. Tooltip Bottom -->
+			<div class="bg-blue-400 p-3">
+				<div class="relative group">
+					<button
+						class="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-600"
+					>
+						Contact
+					</button>
+					<div
+						class="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-max px-2 py-1 text-sm text-white bg-gray-700 rounded shadow-lg opacity-0 group-hover:opacity-100"
+					>
+						Here is where you gonna get my contact number
+                        <div
+							class="absolute bottom-full left-1/2 -translate-x-1/2 border-x-8 border-x-transparent border-b-8 border-b-gray-700"
+						></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
