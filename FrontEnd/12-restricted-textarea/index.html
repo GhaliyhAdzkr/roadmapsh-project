@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<title>Cookie Consent</title>
+	</head>
+
+	<body>
+		<div class="p-10 h-auto w-auto flex flex-col gap-5">
+			<div class="text-3xl">Write your message!</div>
+			<div class="contain relative w-full p-5 border-3 rounded-2xl">
+				<textarea
+                    spellcheck="false"
+                maxlength="250"
+					class="area w-full focus:outline-none h-25 font-medium"
+					placeholder="Enter your text here"
+				></textarea>
+				<div class="absolute bottom-1 right-3 flex">
+					<div class="charcount">0</div>
+					<div>/250</div>
+				</div>
+			</div>
+			<div class="contain relative w-full p-5 border-3 rounded-2xl">
+				<textarea
+                    spellcheck="false"
+                maxlength="250"
+					class="area w-full focus:outline-none h-25 font-medium"
+					placeholder="Enter your text here"
+				></textarea>
+				<div class="absolute bottom-1 right-3 flex">
+					<div class="charcount">0</div>
+					<div>/250</div>
+				</div>
+			</div>
+			<div class="contain relative w-full p-5 border-3 rounded-2xl">
+				<textarea
+                    spellcheck="false"
+                maxlength="250"
+					class="area w-full focus:outline-none h-25 font-medium"
+					placeholder="Enter your text here"
+				></textarea>
+				<div class="absolute bottom-1 right-3 flex">
+					<div class="charcount">0</div>
+					<div>/250</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const areas = document.querySelectorAll(".area");
+
+			areas.forEach((area) => {
+				area.addEventListener("input", function () {
+					const content = this.value;
+					const container = this.closest(".contain");  // looks outside
+					const charcount = container.querySelector(".charcount"); // looks inside
+
+					charcount.textContent = content.length;
+					if (content.length >= 250) {
+						container.classList.add(
+							"border-red-500",
+							"text-red-500",
+						);
+					} else {
+						container.classList.remove(
+							"border-red-500",
+							"text-red-500",
+						);
+					}
+				});
+			});
+
+			// const charcount = document.querySelector(".charcount");
+			// const area = document.querySelector(".area");
+
+			// area.addEventListener("input", function () {
+			// 	const content = this.value;
+			// 	charcount.textContent = content.length;
+
+			// 	if (content.length >= 250) {
+			// 		document
+			// 			.querySelector(".contain")
+			// 			.classList.add("border-red-500", "text-red-500");
+			// 	} else {
+			// 		document
+			// 			.querySelector(".contain")
+			// 			.classList.remove("border-red-500", "text-red-500");
+			// 	}
+			// });
+		</script>
+	</body>
+</html>
