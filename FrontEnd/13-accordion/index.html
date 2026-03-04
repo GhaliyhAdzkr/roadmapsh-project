@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<title>Accordion</title>
+	</head>
+	<body>
+		<div class="w-2/4 mx-auto my-10 flex flex-col gap-2">
+			<div class="text-2xl font-bold">Frequently Asked Question</div>
+			<button
+				onclick="openQuestion(event, 'answer-1')"
+				class="question flex justify-between border px-5 py-2 text-xl rounded-lg bg-black text-white"
+			>
+				<div>What's your name?</div>
+				<div>v</div>
+			</button>
+			<div
+				id="answer-1"
+				class="answer border px-5 py-2 rounded-lg text-xl hidden"
+			>
+				My name is Ghaliyh Rayhan Adz-Dzikra. I came from Kabupaten Batang, Central Java
+			</div>
+			<button
+				onclick="openQuestion(event, 'answer-2')"
+				class="question flex justify-between border px-5 py-2 text-xl rounded-lg bg-black text-white"
+			>
+				<div>How come you are so insecure?</div>
+				<div>v</div>
+			</button>
+			<div
+				id="answer-2"
+				class="answer border px-5 py-2 rounded-lg text-xl hidden"
+			>
+				Honestly idk, maybe i'm just not enough
+			</div>
+			<button
+				onclick="openQuestion(event, 'answer-3')"
+				class="question flex justify-between border px-5 py-2 text-xl rounded-lg bg-black text-white"
+			>
+				<div>Do you wanna change?</div>
+				<div>v</div>
+			</button>
+			<div
+				id="answer-3"
+				class="answer border px-5 py-2 rounded-lg text-xl hidden block"
+			>
+				Absolutely!
+			</div>
+		</div>
+
+		<script>
+			function openQuestion(event, questionID) {
+				const answers = document.querySelectorAll(".answer");
+				answers.forEach((answer) => {
+					if (answer !== document.getElementById(questionID)) {
+						answer.classList.add("hidden");
+						answer.classList.remove("block");
+					}
+				});
+
+				document.getElementById(questionID).classList.toggle("hidden");
+			}
+		</script>
+	</body>
+</html>
