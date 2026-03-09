@@ -43,7 +43,7 @@ function App() {
 	const currQuestion = questionList[currIndex];
 	return (
 		<>
-			<div className="h-screen w-3/4 mx-auto  flex flex-col gap-1 items-center justify-center">
+			<div className="h-screen w-150 mx-auto  flex flex-col gap-1 items-center justify-center">
 				<div className="w-full p-1 border rounded">
 					<div
 						className="p-1 bg-gray-300 rounded h-10 duration-300 flex flex-col justify-center"
@@ -60,7 +60,7 @@ function App() {
 					className="w-full p-1 border rounded block"
 				>
 					<div className="w-full p-1 bg-gray-300 rounded h-60 flex items-center justify-center">
-						<div className="text-2xl"> {currQuestion.question}</div>
+						<div className="text-2xl text-center"> {currQuestion.question}</div>
 					</div>
 					<p className="text-sm bg-gray-300 text-gray-800 text-center pb-2">
 						{currIndex + 1} of {questionList.length}
