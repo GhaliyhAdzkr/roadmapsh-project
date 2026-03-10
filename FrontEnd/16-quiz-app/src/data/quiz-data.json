@@ -1,0 +1,158 @@
+[
+  {
+    "id": 0,
+    "question": "Siapa Nama orang paling gagah di Ilmu Komputer 60",
+    "option": [
+      {
+        "id": 0,
+        "name": "Ghaliyh Rayhan Asfahani",
+        "correct": 0
+      },
+      {
+        "id": 1,
+        "name": "Ghaliyh Rehan Adz-Dzikra",
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "name": "Ghivari Rayhan Adz-Dzikra",
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "name": "Ghaliyh Rayhan Adz-Dzikra",
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "question": "in ipsum ex anim ullamco aliquip commodo consectetur?",
+    "option": [
+      {
+        "id": 0,
+        "name": "Cora Spears",
+        "correct": 0
+      },
+      {
+        "id": 1,
+        "name": "June Peterson",
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "name": "Sybil Vasquez",
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "name": "Miller Forbes",
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "est quis excepteur est aliquip exercitation velit irure?",
+    "option": [
+      {
+        "id": 0,
+        "name": "Compton Tyler",
+        "correct": 0
+      },
+      {
+        "id": 1,
+        "name": "Bond Joseph",
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "name": "Sargent Scott",
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "name": "Sherri Castro",
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "excepteur nostrud qui elit fugiat culpa dolor eu?",
+    "option": [
+      {
+        "id": 0,
+        "name": "Williamson Henderson",
+        "correct": 0
+      },
+      {
+        "id": 1,
+        "name": "Sonya Roberts",
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "name": "Bernadine Dean",
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "name": "Eve Wilkerson",
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "est dolore exercitation exercitation minim irure excepteur commodo?",
+    "option": [
+      {
+        "id": 0,
+        "name": "Mollie Rosa",
+        "correct": 1
+      },
+      {
+        "id": 1,
+        "name": "Shepard Tyson",
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "name": "Maritza Doyle",
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "name": "King Haney",
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "aliquip non aute eu occaecat excepteur sit nulla?",
+    "option": [
+      {
+        "id": 0,
+        "name": "Le Bird",
+        "correct": 1
+      },
+      {
+        "id": 1,
+        "name": "Chavez Kane",
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "name": "Riley Williams",
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "name": "Marva Knapp",
+        "correct": 0
+      }
+    ]
+  }
+]
